@@ -5,7 +5,7 @@
 The vis function simultaneously visualizes the results of the functions stat and ord. Firstly, all covariates of R and Q are visualized by ordination in one plot; covariates involved in at least one significant association are shown in black, other covariates are shown in gray. Then, all covariates that are significantly associated according to stat are connected by lines which color represents the character of their significance.
 }
 \usage{
-vis(Stat, Ord=Ord, alpha=0.05, xaxis=1, yaxis=2, col=c("gray", transblue, transred),
+vis(Stat, Ord=NULL, alpha=0.05, xaxis=1, yaxis=2, col=c("gray", transblue, transred),
     alphatrans=0.5, cex=1, rangex=2, rangey=2, ...)
 }
 \arguments{
