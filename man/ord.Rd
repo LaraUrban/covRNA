@@ -14,7 +14,7 @@ Warning: If R and Q are given as matrices, they will be converted to dataframes 
 Warning: If R or Q is missing, it will be replaced by an identity matrix. Then, a principal component analysis of this matrix will be performed what might be time-consuming, depending on the size of the identity matrix.
 }
 \usage{
-ord(ExprSet, R=R, L=L, Q=Q, exprvar=1, nf=2)
+ord(ExprSet, R=NULL, L=NULL, Q=NULL, exprvar=1, nf=2)
 }
 \arguments{
   \item{ExprSet}{An ExpressionSet of the \emph{Biobase} package.
