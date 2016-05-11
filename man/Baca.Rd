@@ -10,7 +10,9 @@ The integrated Baca dataset contains the ExpressionSet Baca; its assayData conta
 \format{ExpressionSet}
 \examples{
 data(Baca)
-Baca
+fData(Baca)
+pData(Baca)
+exprs(Baca)
 }
 \source{GEO GSE36506}
 \references{
