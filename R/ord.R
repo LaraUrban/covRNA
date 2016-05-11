@@ -14,7 +14,7 @@
 # [call] shows called function
 # [variance] variance explained by the considered axes in [%]
 
-ord <- function(ExprSet, R=R, L=L, Q=Q, exprvar=1, nf=2) {
+ord <- function(ExprSet, R=NULL, L=NULL, Q=NULL, exprvar=1, nf=2) {
 
   # examine and transform data
     # if ExpressionSet is missing: use single dataframes as input
