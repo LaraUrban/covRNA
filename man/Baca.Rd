@@ -10,26 +10,7 @@ The integrated Baca dataset contains the ExpressionSet Baca; its assayData conta
 \format{ExpressionSet}
 \examples{
 data(Baca)
-
 Baca
-ExpressionSet (storageMode: lockedEnvironment)
-assayData: 3642 features, 16 samples
-  element names: exprs
-protocolData: none
-phenoData
-  sampleNames: 1 2 ... 16 (16 total)
-  varLabels: cond
-  varMetadata: labelDescription
-featureData
-  featureNames: GBAA_0001 GBAA_0002 ... GBAA_5744 (3642 total)
-  fvarLabels: J A ... S (26 total)
-  fvarMetadata: labelDescription
-experimentData: use 'experimentData(object)'
-Annotation:
-
-pData(Baca)
-fData(Baca)
-exprs(Baca)
 }
 \source{GEO GSE36506}
 \references{
