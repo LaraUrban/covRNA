@@ -312,6 +312,7 @@ stat <- function(ExprSet, R=NULL, L=NULL, Q=NULL, npermut=9999, padjust="BH", nr
   result$npermut <- npermut
   # add multiple hypothesis adjustment method to result
   result$adjust.method <- padjust
+  class(result) <- "stat"
   return(result)
 }
 
