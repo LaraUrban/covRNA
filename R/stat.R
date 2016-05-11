@@ -24,8 +24,7 @@
 # qual-qual: Chi-square contingency table of binary variables
 # qual-quant: correlation coefficient
 
-stat <- function(ExprSet, R=R, L=L, Q=Q, npermut=9999, padjust="BH",
-                     nrcor=detectCores()-1, exprvar=1) {
+stat <- function(ExprSet, R=NULL, L=NULL, Q=NULL, npermut=9999, padjust="BH", nrcor=detectCores()-1, exprvar=1) {
 
   #####
 
