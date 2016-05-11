@@ -2,7 +2,7 @@
 \alias{stat}
 \title{Fourthcorner analysis for transcriptomic data}
 \description{
-The fourthcorner analysis tests if each sample covariate and each gene covariate are significantly associated by statistical permutation tests. The sample and gene covariates can be categorical and/or quantitative.
+The fourthcorner analysis tests for significant associations between each sample covariate and each gene covariate by statistical permutation tests. The sample and gene covariates can be categorical and/or quantitative.
 
 The input has to be given as dataframe or matrix. Dataframe/matrix L [n x p] contains transcriptomic data of p samples across n genes, dataframe/matrix R [n x m] contains m gene covariates across the n genes and dataframe/matrix Q [p x s] contains s sample covariates across the p samples. Alternatively, objects of the class ExpressionSet (with assayData, phenoData and featureData) can be used as input. If the argument ExprSet is missing, the function will use the dataframes/matrices R, L and Q as input.
 
