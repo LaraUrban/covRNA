@@ -15,7 +15,7 @@ Warning: If R and Q are given as matrices, they will be converted to dataframes 
 Warning: If R or Q is missing, it will be replaced by an identity matrix.
 }
 \usage{
-stat(ExprSet, R=NULL, L=NULL, Q=NUL, npermut=9999, padjust="BH",
+stat(ExprSet, R=NULL, L=NULL, Q=NULL, npermut=9999, padjust="BH",
          nrcor=detectCores()-1, exprvar=1)
 }
 
