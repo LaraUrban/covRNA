@@ -2,13 +2,13 @@
 \alias{covRNA}
 \title{The covRNA package}
 \description{
-The covRNA (COVariate analysis of RNA-Seq data) package contains fast and user-friendly analysis functions of transcriptomic data, e.g. ExpressionSets, by fourthcorner analysis and RLQ.
+covRNA (covariate analysis of RNA-Seq data) is a fast and user-friendly R package which implements fourthcorner analysis and RLQ of transcriptomic data. 
 
-Gene expression data normally comes with covariates of the samples and of the genes. To analyse associations between sample and gene covariates, the fourthcorner analysis tests the statistical significance of the associations by permutation tests and the RLQ visualizes associations within and between the covariates.
+Gene expression data normally comes with covariates of the samples and of the genes. To analyze associations between sample and gene covariates, the fourthcorner analysis tests the statistical significance of the associations by permutation tests while the RLQ visualizes associations within and be-tween the covariates.
 
-The ecological analysis methods fourthcorner analysis and RLQ of the ade4 package are implemented for the analysis of large-scale transcriptomic data. (1) Runtime and storage space are significantly reduced, among others by parallelization, (2) the analysis accounts for transcriptome-specific shapes of the empirical permutation distributions, (3) the analysis is simplified and redundancy is avoided and (4) the analysis is rendered more user-friendly by supplying automatation, direct modification of the plots and unsupervised filtering of the genes.
+The fourthcorner analysis and RLQ implemented in the ade4 package are adapted to easily analyze large-scale transcriptomic data. (1) Runtime and storage space are significantly reduced, (2) the analysis accounts for tran-scriptome-specific shapes of the empirical permutation distributions, (3) the analysis is rendered user-friendly by supplying automation, simple design-ing of plots and unsupervised gene filtering.
 
-To cite covRNA, please use citation("covRNA"). For further details, please refer to the vignette.
+To cite covRNA, please use citation("covRNA"). For further details, please refer to the vignette and the man pages.
 }
 \details{
 \tabular{ll}{
