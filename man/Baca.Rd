@@ -8,6 +8,24 @@ The integrated Baca dataset contains the ExpressionSet Baca; its assayData conta
 \usage{Baca}
 \value{ExpressionSet}
 \format{ExpressionSet}
+\examples{
+data(Baca)
+Baca
+ExpressionSet (storageMode: lockedEnvironment)
+assayData: 3642 features, 16 samples
+  element names: exprs
+protocolData: none
+phenoData
+  sampleNames: 1 2 ... 16 (16 total)
+  varLabels: cond
+  varMetadata: labelDescription
+featureData
+  featureNames: GBAA_0001 GBAA_0002 ... GBAA_5744 (3642 total)
+  fvarLabels: J A ... S (26 total)
+  fvarMetadata: labelDescription
+experimentData: use 'experimentData(object)'
+Annotation:
+}
 \source{GEO GSE36506}
 \references{
 Passalacqua, K. D., Varadarajan, A., Weist, C., Ondov, B. D., Byrd, B. et al. (2012) \emph{Strand-Specific RNA-Seq Reveals Ordered Patterns of Sense and Antisense Transcription in Bacillus anthracis}. PLoS ONE, 7(8):e43350.
