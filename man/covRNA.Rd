@@ -14,8 +14,6 @@ To cite covRNA, please use citation("covRNA"). For further details, please refer
 \tabular{ll}{
 Package: \tab covRNA\cr
 Type: \tab Package\cr
-Version: \tab 0.99.0\cr
-Date: \tab 2016-03-14\cr
 License: \tab GPL (>=2)\cr
 LazyLoad: \tab yes\cr
 }
