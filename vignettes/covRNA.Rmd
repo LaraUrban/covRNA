@@ -1,11 +1,9 @@
----
-Title: "An Introduction to covRNA"
-output: pdf_document
----
-<!--
-%\VignetteEngine{knitr::rmarkdown}
-%\VignetteIndexEntry{An Introduction to covRNA}
--->
+output: 
+  BiocStyle::html_document
+vignette: >
+  %\VignetteIndexEntry{An Introduction to covRNA}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}  
 
 #`covRNA` - Tutorial 
 
@@ -13,16 +11,20 @@ Lara Urban
 
 This tutorial exemplifies how the `covRNA` package uses fourthcorner analysis and RLQ to discover covariate associations in transcriptomic data. Here, an RNA-Seq dataset of *Bacillus anthracis* containing different stress conditions as sample covariates and COG annotations (Clusters of Orthologous Groups) as gene covariates will be analysed. Further, it will be shown how gene covariates can be assigned to the dataset by using other `R` packages. 
 
+Please install the package as follows. 
+```{r, eval=FALSE, prompt=TRUE}
+source("https://bioconductor.org/biocLite.R")
+biocLite("covRNA")
+```
 
 # 1. Overview of the Analysis
 
-Transcriptomic data normally comes with covariates of the samples and of the genes. To analyse associations between sample covariates and gene covariates, the fourthcorner analysis tests the statistical significance of the associations by permutation tests (Legendre *et al.*, 1997) and the RLQ visualizes associations within and between the covariates (Doledec *et al.*, 1996).
+Gene expression data normally comes with covariates of the samples and of the genes. To analyze associations between sample and gene covariates, the fourthcorner analysis tests the statistical significance of the associations by permutation tests (Legendre *et al.*, 1997) while the RLQ visualizes associations within and between the covariates (Doledec *et al.*, 1996).
 
-This package contains fast and user-friendly alternatives to the functions `fourthcorner` and `rlq` of the `ade4` package (Dray *et al.*, 2007, and Dray *et al.*, 2014) for the analysis of large-scale transcriptomic data. The functions `stat` and `ord` of this package can be used for fourthcorner analys and rlq, respectively, and hereby
-1. significantly reduce runtime and storage space;
-2. account for transcriptome-specific shapes of the empirical permutation distributions (according to Chihara and Hesterberg, 2011); 
-3. avoid redundancy and 
-4. render the analysis more user-friendly by supplying automatation, direct modification of the plots and unsupervised filtering of the genes. 
+The `fourthcorner` analysis and `rlq` implemented in the `ade4` package (Dray *et al.*, 2007, and Dray *et al.*, 2014) are adapted to easily analyze large-scale transcriptomic data. The functions `stat` and `ord` of this package can be used for fourthcorner analysis and rlq, respectively; hereby 
+1. runtime and storage space are significantly reduced;
+2. the analysis accounts for transcriptome-specific shapes of the empirical permutation distributions; 
+3. the analysis is rendered user-friendly by supplying automation, simple designing of plots and unsupervised gene filtering.
 
 Please refer to the manpages for details about the functions. The package `covRNA` is implemented to be easily combinable with other packages and objects of the `Bioconductor` project (Gentleman *et al.*, 2004).
 
@@ -33,12 +35,6 @@ Alternatively to an `ExpressionSet`, the three `data.frame`s `R`, `L` and `Q` ca
 **stat**        The function `stat` takes each combination between one sample covariate and one gene covariate and calculates a statistic. If at least one the covariates is quantitative, a correlation coeffcient is calculated. If both covariates are categorical, a Chi-Square test (Fisher, 1922) related statistic is calculated. Significance of the associations is assessed by permutation tests. By default, multiple testing correction according to Benjamini and Hochberg (1995) is applied. The resulting p-values are plotted as cross-tabulation of the sample covariates and the gene functions; by default, red and blue cells show negative and positive significant associations at $\alpha$=0.05, respectively.  
 
 **ord**     The function `ord` automatically applies singular matrix ordination to each of the three `data.frame`s `R`, `L` and `Q`. Correspondence Analysis (CA) is applied to `L`. Principal Component Analysis (PCA) or Hillsmith Analysis (HA) or Multiple Correspondence Analysis (MCA) are applied to `R` and `Q`, depending on the type of variables they contain. Then, the `rlq` function of the `ade4` package is applied and the results can be plotted. 
-
-Let's install the package and then analyse an RNA-Seq dataset.
-```{r, eval=FALSE, prompt=TRUE}
-source("https://bioconductor.org/biocLite.R")
-biocLite("covRNA")
-```
 
 # 2. Analysis of an RNA-Seq Dataset
 
