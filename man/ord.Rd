@@ -2,8 +2,7 @@
 \alias{ord}
 \title{RLQ for transcriptomic data}
 \description{
-The RLQ visualises the association between and within sample and gene covariates by ordination. It applies generalized singular value decomposition (GSVD) to the fourthcorner matrix, which contains the associations between the sample and gene covariates. This is realised by eigendecomposition of the covariance matrices of the fourthcorner matrix.
-
+The RLQ visualises the association between and within sample and gene covariates by ordination. It applies generalized singular value decomposition (GSVD) to the fourthcorner matrix, which contains the associations between the sample and gene covariates. This is realised by eigendecomposition of the covariance matrices of the fourthcorner matrix. The name RLQ refers to the three dataframes R, L and Q to be analyzed. 
 The function `ord` automates the `rlq` function of the `ade4` package.
 
 The input has to be given as dataframe or matrix. Dataframe/matrix L [n x p] contains transcriptomic data of p samples across n genes, dataframe/matrix R [n x m] contains m gene covariates across the n genes and dataframe/matrix Q [p x s] contains s sample covariates across the p samples. Alternatively, objects of the class ExpressionSet (with assayData, phenoData and featureData) can be used as input. If the argument ExprSet is missing, the function will use the dataframes/matrices R, L and Q as input.
