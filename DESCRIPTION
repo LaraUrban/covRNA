@@ -9,7 +9,7 @@ Description: This package provides the analysis methods fourthcorner and RLQ
 License: GPL (>= 2)
 LazyData: TRUE
 Depends: ade4, Biobase
-Imports: parallel, grDevices, stats, graphics
+Imports: parallel, genefilter
 biocViews: GeneExpression, Transcription
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
