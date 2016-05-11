@@ -10,6 +10,7 @@ The integrated Baca dataset contains the ExpressionSet Baca; its assayData conta
 \format{ExpressionSet}
 \examples{
 data(Baca)
+
 Baca
 ExpressionSet (storageMode: lockedEnvironment)
 assayData: 3642 features, 16 samples
@@ -25,6 +26,10 @@ featureData
   fvarMetadata: labelDescription
 experimentData: use 'experimentData(object)'
 Annotation:
+
+pData(Baca)
+fData(Baca)
+exprs(Baca)
 }
 \source{GEO GSE36506}
 \references{
