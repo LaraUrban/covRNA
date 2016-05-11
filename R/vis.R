@@ -12,7 +12,7 @@
 # [cex] defines text size (default=1);
 # [...] additional features can be added
 
-vis <- function(Stat, Ord=Ord, alpha=0.05, xaxis=1, yaxis=2,
+vis <- function(Stat, Ord=NULL, alpha=0.05, xaxis=1, yaxis=2,
                 col=c("gray", transblue, transred),
                 alphatrans=0.5, cex=1, rangex=2, rangey=2, ...) {
 
