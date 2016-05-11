@@ -5,8 +5,7 @@ import(Biobase)
 import(genefilter)
 import(grDevices)
 import(stats)
-importFrom("graphics", "barplot", "mtext", "par", "plot.default",
-             "rect", "segments", "strwidth", "text")
+importFrom("graphics", "barplot", "mtext", "par", "plot.default", "rect", "segments", "strwidth", "text")
 
 # export
 export(stat, ord, vis, plot.stat, plot.ord)
