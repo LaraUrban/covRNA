@@ -111,7 +111,6 @@ ord <- function(ExprSet, R=NULL, L=NULL, Q=NULL, exprvar=1, nf=2) {
   if (exprvar != 1) {result$ngenes <- ngenes} else result$ngenes <- "all"
   # add call of the function to result
   result$call <- match.call()
-  class(result) <- "ord"
   return(result)
 }
 
