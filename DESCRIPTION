@@ -9,7 +9,8 @@ Description: This package provides the analysis methods fourthcorner and RLQ
     analysis for large-scale transcriptomic data.
 License: GPL (>= 2)
 LazyData: TRUE
-Imports: parallel, ade4, Biobase, genefilter, grDevices, stats, graphics
+Depends: ade4, Biobase
+Imports: parallel, grDevices, stats, graphics
 biocViews: GeneExpression, Transcription
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
