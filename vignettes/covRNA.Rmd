@@ -1,13 +1,14 @@
+---
+title: "An Introduction to covRNA"
+author: "Lara Urban"
 output: 
   BiocStyle::html_document
 vignette: >
   %\VignetteIndexEntry{An Introduction to covRNA}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}  
+---
 
-#`covRNA` - Tutorial 
-
-Lara Urban 
 
 This tutorial exemplifies how the `covRNA` package uses fourthcorner analysis and RLQ to discover covariate associations in transcriptomic data. Here, an RNA-Seq dataset of *Bacillus anthracis* containing different stress conditions as sample covariates and COG annotations (Clusters of Orthologous Groups) as gene covariates will be analysed. Further, it will be shown how gene covariates can be assigned to the dataset by using other `R` packages. 
 
