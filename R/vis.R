@@ -96,10 +96,6 @@ vis <- function(Stat, Ord=NULL, alpha=0.05, xaxis=1, yaxis=2,
                      row.names(colcoor)[sig[[2]]], cex=cex)
             }
 
-            # add points to significant variables
-            # if (pch1 != 0) points(rowcoor[sig[[1]],], pch=pch1)
-            # if (pch2 != 0) points(colcoor[sig[[2]],], pch=pch2)
-
             # if there are no significant associations, show all in col[1]
         } else {
             text(rowcoor[,1], rowcoor[,2], row.names(rowcoor),
